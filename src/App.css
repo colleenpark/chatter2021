@@ -145,12 +145,12 @@
 .name-picker{
   position:absolute;
   right:60px;
-  top:0.55rem;
+  top:0.6rem;
   border-radius:100%;
   color:white;
   border:none;
   height: 1.4rem;
-  width: 1.4rem;
+  width: 5 rem;
   cursor: pointer;
   display:flex;
   justify-content: center;
@@ -164,10 +164,10 @@
 .name-edit{
   position:relative;
   right:-6px;
-  top:2px;
+  top:-1px;
   display: inline-block;
   padding: 5px 10px;
-  font-size: 10px;
+  font-size: 15px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -183,7 +183,7 @@
   box-shadow: 1px 6px 20px 3px rgba(93, 15, 250, 0.4);
   }
   .ok_button{
-  position:relative;
+    position:relative;
   right:-6px;
   top:2px;
   display: inline-block;

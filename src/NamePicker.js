@@ -23,7 +23,7 @@ function NamePicker(props){
     return <div className="name-picker">
         <div>{username}</div>
         <button className="name-edit" onClick={()=> setShowInput(true)}>
-            EDIT
+            Edit Name
         </button>
     </div>
 }
