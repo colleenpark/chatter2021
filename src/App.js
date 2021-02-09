@@ -1,9 +1,8 @@
 import {useState} from 'react';
 import './App.css';
 import TextInput from './TextInput';
-import message from'./Message'
-import NamePicker from './NamePicker';
-
+import Message from './Message'
+import NamePicker from './NamePicker'
 
 function App() {
   const [messages,setMessages] = useState([])
@@ -18,27 +17,16 @@ function App() {
       <NamePicker saveName={setUsername} />
     </header>
 
-    
-    
     <main className="messages">
-        <div className="message">
-
-          {messages.map((message) =>            
-              
-            <div className="message-row">
-              <h2>{message.text}</h2>
-              <p className="date">{message.ts}</p>
-              <h3 className="message-user">{"from: " + message.name}</h3>
-            </div>
-            
-            
-            )}
-        </div>
+      {messages.map((msg,i)=> {
+        return <Message key={i} {...msg} />
+      })}
     </main>
+
     <TextInput 
-      send={(t)=> setMessages([{text:t, name:username, ts:new Date()}, ...messages])}
+      send={(t)=> setMessages([{text:t, name:username, date:new Date()}, ...messages])}
     />
+
   </div>
 }
-
 export default App;
