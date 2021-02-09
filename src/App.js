@@ -12,7 +12,7 @@ function App() {
   return <div className={"App"}>
  
     <header className="header">
-      <div className="logo" />
+      <div className="logo"/>
       CHATTER
       <NamePicker saveName={setUsername} />
     </header>
@@ -28,5 +28,5 @@ function App() {
     />
 
   </div>
-}
+} 
 export default App;
